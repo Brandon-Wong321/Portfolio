@@ -1,0 +1,98 @@
+---
+title: "Midpoint Deliverable"
+author: "Aviraj Singh, Brandon Wong, EJ Velasco, Tony Fei"
+date: "18/05/2020"
+output: html_document
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("summary_info.R")
+source("summary_table.R")
+source("first_chart.R")
+source("second_chart.R")
+source("third_chart.R")
+library("knitr")
+```
+
+## Introduction
+
+For our project, our domain of interest is to observe the transition of standardized tests being a requirement for admission by universities. Specifically, we have narrowed our scope to analyze the relationship between average SAT scores and their relationship to income across zip codes in California. As an objective of our project, we would like to uncover some of the discepencies from area to area and how it affects students' score. As college entrance exams, such as the SAT or ACT, were a determining factor in admissions prior to the coronavirus, we wish to uncover if these tests are a fair measure of student academics. Thus, findings from our report will reveal whether standardized tests are a true reflection of a student's capabilities, or is moreso a reflection of the resources and means that students had access to during this time. The source of the data is from [California Department Of Education](https://www.cde.ca.gov/ds/sp/ai/) and [ACS 2010 - 2014 ACS Data](http://www.usa.com/rank/california-state--median-household-income--zip-code-rank.html). 
+
+## Summary Information
+
+```{r include = FALSE}
+source("summary_info.R")
+```
+
+The summary includes some interesting analysis of how household income
+corelates to a student's total SAT score. Based on our data, the mean
+and median household income for California is 
+`r mean_household_income` and `r summary_information$median_household_income`
+respectively. The average SAT score for kids in below average income
+household was `r summary_information$avg_score_below_mean_inc` and for kids
+in above average income household was 
+`r avg_score_above_mean_inc`. The zip code with the highest
+median household income was `r summary_information$zip_with_max_income[1]`.
+
+## Summary Table
+
+The summary table portrays how total SAT score and mean household income
+are different for different areas(Zip code) in California.
+
+```{r, layout = "l-body-outset", echo = FALSE, warning = FALSE}
+library(rmarkdown)
+library(DT)
+source("summary_table.R")
+DT::datatable(summary_table, options = list(rows.print = 25))
+```
+
+From the table, we can clearly observe that zip codes in the beggining 
+(low SAT scores)of the list are the areas with low average 
+household income whereas zip codes towards the end of the list(high SAT  
+scores) are the areas with high average household incomes and higher sat
+scores.
+
+
+## First Visualization
+
+The purpose of this visualization is to highlight the potential relationship
+between geographical locations and the average SAT performace. Using map
+visualization, we can get a better insight on location vs. SAT performance.
+Here is the visualization:
+
+```{r, echo = FALSE, warning = FALSE}
+
+source("first_chart.R")
+chart_one
+```
+
+From the map visualization, we can see there seems to be a higher percentage
+of students passing the performance benchmark near San Francisco and Sacramento
+than other places. Students near Fresno seem to have significantly lower performance 
+than others. 
+
+
+## Second Visualization
+
+The purpose of this visualization is to compare HS average SAT score and Median income by zip code. In particular, the key displays bar colors by zip code. 
+
+```{r, echo = FALSE, warning = FALSE}
+
+source("second_chart.R")
+chart_two
+```
+
+From the bar chart, we observe an upward trend as SAT score and median income increase. Towards the 1500 range in SAT score, not only do we see a concentration of data but the color key reflects that many of the zip codes are 955xx which is Humboldt county. Towards the upper boundary of highest SAT scores we see more 945xx zip codes which is Alameda county in the Bay area. This further confirms what we see from our map visualization.
+
+## Third Visualization
+
+The purpose of this visualization is to plot the HS average SAT score versus Median income by zip code, to show any linear or nonlinear relationships. We have a trend line to highlight how income and SAT scores are related. 
+
+```{r, echo = FALSE, warning = FALSE, message=FALSE}
+
+source("third_chart.R")
+chart_three
+```
+
+From this scatterplot, we observe a linear relationship between SAT scores and income. We can easily follow the trendline to see a trend up in SAT scores as median zip code income increases. The correlation between the two is `r corr_sat_income`. Based on the trendline, there seemed to be several high schools that outperformed their expected SAT score based on their zip code median income, as well as some underperforming richer high schools. To the top right of the graph, schools that are well above the trendline shows the schools despite having access to more resources, performed about as well with other schools with less resources. 
