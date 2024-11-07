@@ -1,7 +1,7 @@
 # Portfolio
 
 ## Contact
-- [Email] (wongbrandonr@gmail.com)
+- wongbrandonr@gmail.com
 - [LinkedIn](https://www.linkedin.com/in/brandonrileywong/)
 
 ## Bio
