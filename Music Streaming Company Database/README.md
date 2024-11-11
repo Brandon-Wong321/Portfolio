@@ -11,4 +11,4 @@ This Project focuses on designing and building a relational database for a poten
 - Info_330_Complex_Queries: Queries to create visualizations for market analysis.
 
 
-Thanks for reading! We hope you like the project!
+Thanks for reading! I hope you like the project!
