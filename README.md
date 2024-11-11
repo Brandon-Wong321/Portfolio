@@ -5,11 +5,11 @@
 - [LinkedIn](https://www.linkedin.com/in/brandonrileywong/)
 
 ## Bio
-Hi I am Brandon Wong. I am a Data Analyst/GIS Analyst. I previously worked on Demographic Equity and Transportation Survey Analysis for the Puget Sound Regional Council.
+Hi I am Brandon Wong! I am a Data Analyst/GIS Analyst. I previously worked on Equity Analysis and Travel Survey projects for the Puget Sound Regional Council.
 
 My areas of interest include:
 
-- Transportation and Housing Data
+- Transportation Planning and Growth Management
 - Advance SQL skills
 - Methods for evaluating classification of text data and utilizing Machine Learning Models
 
@@ -26,6 +26,6 @@ My areas of interest include:
 
 - [King County Rent Prices Dashboard](https://brandon-wong321.github.io/King-County-Housing-Needs/)
 
-- [ArcGIS Story Map](https://storymaps.arcgis.com/stories/54c2c9f9dd5f47fca78b0324ffe8ca15)
+- [Shuck Wing Fong Immigrant Story (ArcGIS Story Map)](https://storymaps.arcgis.com/stories/54c2c9f9dd5f47fca78b0324ffe8ca15)
 
-- [ArcGIS Online Map](https://www.arcgis.com/apps/instant/minimalist/index.html?appid=6aa9d2aa47f844759250c6519e953d22&locale=en-us)
+- [Bellevue Public Schools Analysis (ArcGIS Online Map)](https://www.arcgis.com/apps/instant/minimalist/index.html?appid=6aa9d2aa47f844759250c6519e953d22&locale=en-us)
