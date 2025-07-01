@@ -5,13 +5,14 @@
 - [LinkedIn](https://www.linkedin.com/in/brandonrileywong/)
 
 ## Bio
-Hi I am Brandon Wong! I am a Data Analyst/GIS Analyst. I previously worked on Equity Analysis and Travel Survey projects for the Puget Sound Regional Council.
+Hi I am Brandon Wong! I am a Data Analyst. I previously worked on Equity Analysis and Travel Survey projects for the Puget Sound Regional Council.
 
 My areas of interest include:
 
-- Transportation Planning and Growth Management
+- Data Visualization
 - Advance SQL skills
 - Methods for evaluating classification of text data and utilizing Machine Learning Models
+- Demographic Analysis
 
 
 ## Writing Sample
